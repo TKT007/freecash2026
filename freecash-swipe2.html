@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- TikTok Pixel Code Start -->
+    <script>
+    !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+    ttq.load('D4DO8HRC77UCI3HO4RHG');
+    ttq.page();
+    }(window, document, 'ttq');
+    </script>
+    <!-- TikTok Pixel Code End -->
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/d4rEH4U.png">
+    <link rel="apple-touch-icon" href="https://i.imgur.com/d4rEH4U.png">
+    <title>Freecash - Ready to Scroll</title>
+    <style>
+        :root{
+            --bg: #05050A;
+            --text: #f0f6ff;
+            --muted: #9AA0AE;
+            --brand: #00ff88;
+            --brand2: #00d175;
+            --accent-red: #ff4757;
+            --bg-card: #0E0E14;
+            --border: #1a1a27;
+            --brand-glow: rgba(0,255,136,0.25);
+        }
+
+        * { box-sizing: border-box; }
+        html, body { margin: 0; height: 100%; }
+        body {
+            color: var(--text);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -.022em;
+            background-color: var(--bg);
+            background-image:
+                radial-gradient(circle at 10% 80%, rgba(0,255,136,.08) 0%, transparent 45%),
+                radial-gradient(circle at 90% 20%, rgba(0,255,136,.05) 0%, transparent 45%),
+                linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+            position: relative;
+        }
+
+        .bg-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: .3;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .orb1 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(0,255,136,.4), transparent);
+            top: -100px;
+            left: -100px;
+            animation: float1 20s ease-in-out infinite;
+        }
+        .orb2 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0,213,117,.3), transparent);
+            bottom: -50px;
+            right: -50px;
+            animation: float2 15s ease-in-out infinite;
+        }
+
+        @keyframes float1 {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(50px,50px) scale(1.1); }
+        }
+        @keyframes float2 {
+            0%, 100% { transform: translate(0,0) scale(1); }
+            50% { transform: translate(-30px,-40px) scale(1.15); }
+        }
+
+        /* Money Emojis Background */
+        .money-emoji {
+            position: fixed;
+            font-size: 16px;
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
+            filter: blur(0.5px);
+        }
+
+        .money-emoji:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation: floatMoney1 8s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(2) {
+            top: 20%;
+            right: 15%;
+            animation: floatMoney2 10s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(3) {
+            top: 60%;
+            left: 5%;
+            animation: floatMoney3 12s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(4) {
+            top: 70%;
+            right: 10%;
+            animation: floatMoney1 9s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(5) {
+            top: 35%;
+            left: 20%;
+            animation: floatMoney2 11s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(6) {
+            top: 50%;
+            right: 25%;
+            animation: floatMoney3 10s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(7) {
+            top: 85%;
+            left: 30%;
+            animation: floatMoney1 13s ease-in-out infinite;
+        }
+        .money-emoji:nth-child(8) {
+            top: 15%;
+            left: 50%;
+            animation: floatMoney2 9s ease-in-out infinite;
+        }
+
+        @keyframes floatMoney1 {
+            0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) translateX(10px) rotate(5deg); }
+            50% { transform: translateY(-10px) translateX(-5px) rotate(-3deg); }
+            75% { transform: translateY(-15px) translateX(5px) rotate(2deg); }
+        }
+
+        @keyframes floatMoney2 {
+            0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+            33% { transform: translateY(-15px) translateX(-10px) rotate(-4deg); }
+            66% { transform: translateY(-25px) translateX(8px) rotate(3deg); }
+        }
+
+        @keyframes floatMoney3 {
+            0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) translateX(-15px) rotate(-5deg); }
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 60px 20px 40px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section {
+            opacity: 1;
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+        }
+        .section.fade-out {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        .section.hidden {
+            display: none;
+        }
+        .section.fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Logo Partnership */
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 auto 24px;
+        }
+        
+        .logo-container {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,255,136,.1);
+            border: 1px solid rgba(0,255,136,.3);
+            box-shadow: 0 10px 40px rgba(0,255,136,.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+        
+        .partnership-x {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--muted);
+            opacity: 0.5;
+            user-select: none;
+        }
+
+        .main-title {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 20px 0 16px;
+            background: linear-gradient(90deg, var(--text), var(--brand));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--muted);
+            margin-bottom: 60px;
+            line-height: 1.5;
+            padding: 0 20px;
+        }
+
+        .swipe-container {
+            margin: 0 auto 40px;
+            max-width: 360px;
+        }
+
+        .swipe-instruction {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 12px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .swipe-track {
+            position: relative;
+            width: 100%;
+            height: 70px;
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 40px;
+            overflow: hidden;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: none;
+        }
+
+        .swipe-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--brand2), var(--brand));
+            border-radius: 40px;
+            transition: width 0.1s ease-out;
+            opacity: 0.3;
+        }
+
+        .swipe-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+            pointer-events: none;
+            transition: opacity 0.2s;
+            letter-spacing: 0.5px;
+        }
+
+        .swipe-thumb {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 62px;
+            height: 62px;
+            background: linear-gradient(135deg, var(--brand), var(--brand2));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            transition: box-shadow 0.3s, transform 0.1s;
+            box-shadow: 0 4px 20px rgba(0,255,136,.4);
+            z-index: 10;
+        }
+
+        .swipe-thumb:active {
+            cursor: grabbing;
+        }
+
+        .swipe-thumb svg {
+            width: 28px;
+            height: 28px;
+            color: var(--bg);
+            transition: transform 0.2s;
+        }
+
+        .swipe-track:hover .swipe-thumb {
+            box-shadow: 0 6px 30px rgba(0,255,136,.6);
+        }
+
+        @keyframes shimmer {
+            0% {
+                box-shadow: 0 4px 20px rgba(0,255,136,.4);
+            }
+            50% {
+                box-shadow: 0 6px 35px rgba(0,255,136,.7);
+            }
+            100% {
+                box-shadow: 0 4px 20px rgba(0,255,136,.4);
+            }
+        }
+
+        .swipe-thumb.idle {
+            animation: shimmer 2s ease-in-out infinite;
+        }
+
+        .swipe-track.success .swipe-fill {
+            width: 100% !important;
+            opacity: 1;
+        }
+
+        .swipe-track.success .swipe-text {
+            opacity: 0;
+        }
+
+        .swipe-track.success .swipe-thumb {
+            transform: scale(1.1);
+            box-shadow: 0 8px 40px rgba(0,255,136,.8);
+        }
+
+        .youre-in-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 30px 0 20px;
+        }
+        .check-circle {
+            width: 60px;
+            height: 60px;
+            background: var(--brand);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 20px var(--brand-glow);
+        }
+        .check-circle svg {
+            width: 32px;
+            height: 32px;
+            color: var(--bg);
+        }
+        .youre-in-text {
+            font-size: 52px;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(90deg, var(--text), var(--brand));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .text-neon { color: var(--brand); }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            text-align: left;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.8), 0 0 30px var(--brand-glow);
+            position: relative;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 24px 0;
+            color: var(--muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .li {
+            display: flex;
+            gap: 16px;
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--border);
+            align-items: flex-start;
+            text-align: left;
+            background: transparent;
+        }
+        .li:first-of-type {
+            border-top: 1px solid var(--border);
+        }
+        .li:last-child { border-bottom: 0; }
+
+        .check {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--brand);
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--bg);
+            flex-shrink: 0;
+            box-shadow: 0 0 10px var(--brand-glow);
+        }
+        .li b {
+            display: block;
+            color: var(--text);
+            font-size: 16px;
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+        .muted-text {
+            color: var(--muted);
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, var(--brand), var(--brand2));
+            color: var(--bg) !important;
+            font-weight: 800;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            border: 0;
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--brand-glow);
+            transition: all 0.3s ease;
+        }
+        .cta-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);
+            transition: left 0.5s;
+        }
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,255,136,.5);
+        }
+        .cta:hover::before { left: 100%; }
+
+        .activation-notice {
+            background: linear-gradient(135deg, #1a0f0a 0%, #0f1419 100%);
+            border: 2px solid var(--accent-red);
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 24px;
+            text-align: left;
+            box-shadow: 0 0 30px rgba(255,71,87,.3);
+            animation: glow-border 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        .activation-notice::before {
+            content: '⚠️ IMPORTANT';
+            position: absolute;
+            top: -1px;
+            right: 20px;
+            background: var(--accent-red);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 4px 12px;
+            border-radius: 0 0 8px 8px;
+            letter-spacing: .5px;
+        }
+
+        @keyframes glow-border {
+            0%, 100% {
+                box-shadow: 0 0 20px rgba(255,71,87,.3);
+                border-color: var(--accent-red);
+            }
+            50% {
+                box-shadow: 0 0 35px rgba(255,71,87,.5);
+                border-color: #ff6b7a;
+            }
+        }
+
+        .activation-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .lock-icon {
+            font-size: 20px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .activation-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text);
+            flex: 1;
+        }
+
+        .activation-text {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .highlight-green {
+            color: var(--brand);
+            font-weight: 700;
+        }
+
+        .foot {
+            color: var(--muted);
+            font-size: 12px;
+            text-align: center;
+            margin-top: 16px;
+            opacity: .7;
+        }
+
+        /* New Second Step Styles */
+        .partnership-badge {
+            background: rgba(0,255,136,.15);
+            border: 1px solid rgba(0,255,136,.3);
+            border-radius: 20px;
+            padding: 8px 16px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--brand);
+            letter-spacing: 0.5px;
+            margin: 0 auto 32px;
+            display: inline-block;
+        }
+
+        .steps-section {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+            width: 100%;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            text-align: left;
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            border-color: rgba(0,255,136,.3);
+            box-shadow: 0 4px 20px rgba(0,255,136,.1);
+        }
+
+        .step-number-badge {
+            width: 40px;
+            height: 40px;
+            background: var(--brand);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--bg);
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,255,136,.3);
+        }
+
+        .step-content-new {
+            flex: 1;
+        }
+
+        .step-content-new h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text);
+            margin: 0 0 8px 0;
+            line-height: 1.2;
+        }
+
+        .step-content-new p {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.5;
+            margin: 0 0 12px 0;
+        }
+
+        .highlight-text {
+            color: var(--brand);
+            font-weight: 700;
+        }
+
+        .step-tag {
+            display: inline-block;
+            background: rgba(0,255,136,.15);
+            border: 1px solid rgba(0,255,136,.25);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--brand);
+            letter-spacing: 0.3px;
+        }
+
+        .step-tag.green {
+            background: rgba(0,255,136,.2);
+            border-color: rgba(0,255,136,.4);
+            color: var(--brand);
+        }
+
+        .step-tag.gold {
+            background: rgba(255,193,7,.15);
+            border-color: rgba(255,193,7,.3);
+            color: #ffc107;
+        }
+
+        .step-tags-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .cta-new {
+            width: 100%;
+            background: linear-gradient(135deg, var(--brand), var(--brand2));
+            border-radius: 20px;
+            padding: 20px 24px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(0,255,136,.3);
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .cta-new:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0,255,136,.5);
+        }
+
+        .cta-content {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            text-align: left;
+        }
+
+        .cta-icon-new {
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+        
+        .cta-icon-new svg {
+            width: 100%;
+            height: 100%;
+            fill: var(--bg);
+        }
+
+        .cta-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--bg);
+            margin-bottom: 2px;
+            letter-spacing: -0.3px;
+        }
+
+        .cta-subtitle {
+            font-size: 12px;
+            color: rgba(0,0,0,.7);
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .container { 
+                padding: 80px 16px 32px;
+            }
+            .main-title { font-size: 40px; }
+            .youre-in-text { font-size: 42px; }
+            .swipe-container { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
+
+    <!-- Money Emojis Background -->
+    <div class="money-emoji">💰</div>
+    <div class="money-emoji">💵</div>
+    <div class="money-emoji">💸</div>
+    <div class="money-emoji">💴</div>
+    <div class="money-emoji">💷</div>
+    <div class="money-emoji">💶</div>
+    <div class="money-emoji">🤑</div>
+    <div class="money-emoji">💳</div>
+
+    <div class="container">
+        <!-- FIRST STEP -->
+        <section class="section" id="firstStep">
+            <div class="logo-wrapper">
+                <div class="logo-container">
+                    <img class="logo" src="https://img.freepik.com/vetores-premium/logo-do-tik-tok_578229-290.jpg" alt="TikTok Logo" />
+                </div>
+                <span class="partnership-x">×</span>
+                <div class="logo-container">
+                    <img class="logo" src="https://i.imgur.com/d4rEH4U.png" alt="Freecash Logo" />
+                </div>
+            </div>
+
+            <h1 class="main-title">Ready To Scroll?</h1>
+            <p class="subtitle">Complete simple tasks and get rewarded</p>
+
+            <div class="swipe-container">
+                <div class="swipe-instruction">Swipe to unlock access</div>
+                <div class="swipe-track" id="swipeTrack">
+                    <div class="swipe-fill" id="swipeFill"></div>
+                    <div class="swipe-text" id="swipeText">Slide to Unlock →</div>
+                    <div class="swipe-thumb idle" id="swipeThumb">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECOND STEP -->
+        <section class="section hidden" id="secondStep">
+            <div class="logo-wrapper">
+                <div class="logo-container">
+                    <img class="logo" src="https://img.freepik.com/vetores-premium/logo-do-tik-tok_578229-290.jpg" alt="TikTok Logo" />
+                </div>
+                <span class="partnership-x">×</span>
+                <div class="logo-container">
+                    <img class="logo" src="https://i.imgur.com/d4rEH4U.png" alt="Freecash Logo" />
+                </div>
+            </div>
+
+            <h1 class="main-title" style="margin-top: 30px;">Get Paid to <span class="text-neon">Scroll!</span></h1>
+
+            <p class="subtitle" style="margin-bottom: 24px; padding: 0;">
+                Join thousands earning daily by completing offers and cashing out instantly.
+            </p>
+
+            <a id="cta" class="cta-new" href="https://fb.track-conv.shop/click" onclick="handleClick(event)">
+                <div class="cta-content">
+                    <div class="cta-icon-new">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="cta-title">Download Free App</div>
+                        <div class="cta-subtitle">Instant payouts: PayPal, Crypto, Bank & more.</div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="steps-section">
+                <div class="step-card">
+                    <div class="step-number-badge">1</div>
+                    <div class="step-content-new">
+                        <h3>Download the Freecash App</h3>
+                        <p>Available on iOS & Android - Takes less than 60 seconds</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number-badge">2</div>
+                    <div class="step-content-new">
+                        <h3>Complete Daily Offers</h3>
+                        <p>Watch videos, test apps & games, or take surveys!</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number-badge">3</div>
+                    <div class="step-content-new">
+                        <h3>Cash Out Your Earnings</h3>
+                        <p>Instant Payouts: PayPal, CashApp, Venmo, Crypto & Wire</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activation-notice">
+                <div class="activation-header">
+                    <span class="lock-icon">🔓</span>
+                    <span class="activation-title">Activation Required</span>
+                </div>
+                <p class="activation-text">
+                    New users: Complete <span class="highlight-green">2 quick offers</span> to unlock full access and start earning.
+                </p>
+            </div>
+
+            <div class="foot">Trusted by over 500,000 users earning money daily</div>
+        </section>
+    </div>
+
+    <script>
+    const swipeTrack = document.getElementById('swipeTrack');
+    const swipeThumb = document.getElementById('swipeThumb');
+    const swipeFill = document.getElementById('swipeFill');
+    const swipeText = document.getElementById('swipeText');
+    const firstStep = document.getElementById('firstStep');
+    const secondStep = document.getElementById('secondStep');
+
+    let isDragging = false;
+    let startX = 0;
+    let currentX = 0;
+    let maxDistance = 0;
+
+    function initSwipe() {
+        const trackRect = swipeTrack.getBoundingClientRect();
+        maxDistance = trackRect.width - swipeThumb.offsetWidth - 8;
+    }
+
+    function handleStart(e) {
+        isDragging = true;
+        swipeThumb.classList.remove('idle');
+        startX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+        initSwipe();
+    }
+
+    function handleMove(e) {
+        if (!isDragging) return;
+        
+        e.preventDefault();
+        const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
+        const deltaX = clientX - startX;
+        
+        currentX = Math.max(0, Math.min(deltaX, maxDistance));
+        swipeThumb.style.left = `${currentX + 4}px`;
+        
+        const fillPercentage = (currentX / maxDistance) * 100;
+        swipeFill.style.width = `${fillPercentage}%`;
+        
+        if (fillPercentage < 30) {
+            swipeText.textContent = 'Keep Going... →';
+        } else if (fillPercentage < 70) {
+            swipeText.textContent = 'Almost There! →';
+        } else {
+            swipeText.textContent = 'Release to Start! →';
+        }
+    }
+
+    function handleEnd() {
+        if (!isDragging) return;
+        
+        isDragging = false;
+        const fillPercentage = (currentX / maxDistance) * 100;
+        
+        if (fillPercentage >= 80) {
+            completeSwipe();
+        } else {
+            resetSwipe();
+        }
+    }
+
+    function completeSwipe() {
+        console.log('🎉 Swipe completed!');
+        
+        swipeThumb.style.transition = 'left 0.3s ease-out';
+        swipeThumb.style.left = `${maxDistance + 4}px`;
+        swipeFill.style.transition = 'width 0.3s ease-out';
+        swipeFill.style.width = '100%';
+        swipeFill.style.opacity = '1';
+        
+        swipeTrack.classList.add('success');
+        swipeText.textContent = '✓ Unlocked!';
+        
+        setTimeout(() => {
+            transitionToStep2();
+        }, 800);
+    }
+
+    function resetSwipe() {
+        swipeThumb.style.transition = 'left 0.3s ease-out';
+        swipeThumb.style.left = '4px';
+        swipeFill.style.transition = 'width 0.3s ease-out';
+        swipeFill.style.width = '0%';
+        swipeText.textContent = 'Slide to Unlock →';
+        
+        setTimeout(() => {
+            swipeThumb.style.transition = '';
+            swipeFill.style.transition = '';
+            swipeThumb.classList.add('idle');
+            currentX = 0;
+        }, 300);
+    }
+
+    function transitionToStep2() {
+        firstStep.classList.add('fade-out');
+        
+        setTimeout(() => {
+            firstStep.classList.add('hidden');
+            secondStep.classList.remove('hidden');
+            void secondStep.offsetWidth;
+            secondStep.classList.add('fade-in');
+        }, 400);
+    }
+
+    swipeThumb.addEventListener('mousedown', handleStart);
+    swipeThumb.addEventListener('touchstart', handleStart, { passive: false });
+    
+    document.addEventListener('mousemove', handleMove);
+    document.addEventListener('touchmove', handleMove, { passive: false });
+    
+    document.addEventListener('mouseup', handleEnd);
+    document.addEventListener('touchend', handleEnd);
+
+    window.addEventListener('load', initSwipe);
+    window.addEventListener('resize', initSwipe);
+
+    function handleClick(event) {
+        event.preventDefault();
+        console.log('🚀 Download button clicked! Firing TikTok events...');
+
+        try {
+            ttq.track('AddToCart', {
+                content_type: 'product',
+                content_id: 'freecash-tiktok-rewards',
+                value: 1.00,
+                currency: 'USD'
+            });
+
+            ttq.track('CompleteRegistration', {
+                content_type: 'product',
+                content_id: 'freecash-tiktok-rewards',
+                value: 1.00,
+                currency: 'USD'
+            });
+
+            ttq.track('Purchase', {
+                content_type: 'product',
+                content_id: 'freecash-tiktok-rewards',
+                value: 1.00,
+                currency: 'USD'
+            });
+
+            console.log('✅ TikTok events fired successfully');
+        } catch (e) {
+            console.warn('⚠️ TikTok tracking failed:', e);
+        }
+
+        console.log('🔀 Redirecting to: https://fb.track-conv.shop/click');
+        window.location.href = "https://fb.track-conv.shop/click";
+    }
+    </script>
+</body>
+</html>
