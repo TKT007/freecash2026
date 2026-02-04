@@ -582,152 +582,72 @@
             opacity: .7;
         }
 
-        /* New Second Step Styles */
-        .partnership-badge {
-            background: rgba(0,255,136,.15);
+        /* NEW SECOND STEP DESIGN */
+        .hero-section {
+            text-align: center;
+            margin: 32px 0 24px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0,255,136,.2), rgba(0,255,136,.1));
             border: 1px solid rgba(0,255,136,.3);
             border-radius: 20px;
-            padding: 8px 16px;
-            font-size: 11px;
-            font-weight: 700;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
             color: var(--brand);
-            letter-spacing: 0.5px;
-            margin: 0 auto 32px;
-            display: inline-block;
+            margin-bottom: 16px;
         }
 
-        .steps-section {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 24px;
-            width: 100%;
-        }
-
-        .step-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 16px 20px;
-            display: flex;
-            gap: 14px;
-            align-items: flex-start;
-            text-align: left;
-            transition: all 0.3s ease;
-        }
-
-        .step-card:hover {
-            border-color: rgba(0,255,136,.3);
-            box-shadow: 0 4px 20px rgba(0,255,136,.1);
-        }
-
-        .step-number-badge {
-            width: 40px;
-            height: 40px;
-            background: var(--brand);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: 800;
-            color: var(--bg);
-            flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0,255,136,.3);
-        }
-
-        .step-content-new {
-            flex: 1;
-        }
-
-        .step-content-new h3 {
-            font-size: 18px;
-            font-weight: 700;
+        .hero-title {
+            font-size: 44px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin: 0 0 12px 0;
             color: var(--text);
-            margin: 0 0 4px 0;
-            line-height: 1.2;
         }
 
-        .step-content-new p {
-            font-size: 14px;
+        .hero-subtitle {
+            font-size: 16px;
             color: var(--muted);
-            line-height: 1.4;
+            line-height: 1.5;
             margin: 0;
         }
 
-        .highlight-text {
-            color: var(--brand);
-            font-weight: 700;
-        }
-
-        .step-tag {
-            display: inline-block;
-            background: rgba(0,255,136,.15);
-            border: 1px solid rgba(0,255,136,.25);
-            border-radius: 6px;
-            padding: 4px 10px;
-            font-size: 10px;
-            font-weight: 700;
-            color: var(--brand);
-            letter-spacing: 0.3px;
-        }
-
-        .step-tag.green {
-            background: rgba(0,255,136,.2);
-            border-color: rgba(0,255,136,.4);
-            color: var(--brand);
-        }
-
-        .step-tag.gold {
-            background: rgba(255,193,7,.15);
-            border-color: rgba(255,193,7,.3);
-            color: #ffc107;
-        }
-
-        .step-tags-group {
+        .cta-hero {
             display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-        }
-
-        .cta-new {
+            align-items: center;
+            gap: 16px;
             width: 100%;
             background: linear-gradient(135deg, var(--brand), var(--brand2));
-            border-radius: 20px;
+            border-radius: 18px;
             padding: 20px 24px;
             text-decoration: none;
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 8px 30px rgba(0,255,136,.3);
-            margin-bottom: 24px;
-            display: block;
+            margin-bottom: 32px;
         }
 
-        .cta-new:hover {
-            transform: translateY(-2px);
+        .cta-hero:hover {
+            transform: translateY(-3px);
             box-shadow: 0 12px 40px rgba(0,255,136,.5);
         }
 
-        .cta-content {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            text-align: left;
-        }
-
-        .cta-icon-new {
-            width: 28px;
-            height: 28px;
+        .cta-hero-icon {
+            width: 32px;
+            height: 32px;
             flex-shrink: 0;
-        }
-        
-        .cta-icon-new svg {
-            width: 100%;
-            height: 100%;
             fill: var(--bg);
         }
 
-        .cta-title {
+        .cta-hero-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .cta-hero-title {
             font-size: 18px;
             font-weight: 800;
             color: var(--bg);
@@ -735,10 +655,126 @@
             letter-spacing: -0.3px;
         }
 
-        .cta-subtitle {
+        .cta-hero-sub {
+            font-size: 13px;
+            color: rgba(0,0,0,.65);
+            font-weight: 600;
+        }
+
+        .features-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: rgba(0,255,136,.25);
+            transform: translateX(4px);
+        }
+
+        .feature-emoji {
+            font-size: 32px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .feature-label {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 2px;
+            line-height: 1.2;
+        }
+
+        .feature-desc {
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.3;
+        }
+
+        .social-proof {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+        }
+
+        .proof-avatars {
+            display: flex;
+            align-items: center;
+            gap: -8px;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            background: var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border: 2px solid var(--bg);
+            margin-left: -8px;
+        }
+
+        .avatar:first-child {
+            margin-left: 0;
+        }
+
+        .avatar-count {
+            width: 44px;
+            height: 36px;
+            background: var(--brand);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 12px;
-            color: rgba(0,0,0,.7);
-            font-weight: 500;
+            font-weight: 800;
+            color: var(--bg);
+            border: 2px solid var(--bg);
+            margin-left: -8px;
+        }
+
+        .proof-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .proof-stat {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .proof-sub {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.2;
         }
 
         @media (max-width: 600px) {
@@ -748,6 +784,7 @@
             .main-title { font-size: 40px; }
             .youre-in-text { font-size: 42px; }
             .swipe-container { max-width: 100%; }
+            .hero-title { font-size: 36px; }
         }
     </style>
 </head>
@@ -807,63 +844,60 @@
                 </div>
             </div>
 
-            <h1 class="main-title" style="margin-top: 30px;">Get Paid to <span class="text-neon">Scroll!</span></h1>
+            <div class="hero-section">
+                <div class="hero-badge">✨ You're Qualified</div>
+                <h1 class="hero-title">Start Earning<br/>in <span class="text-neon">60 Seconds</span></h1>
+                <p class="hero-subtitle">Download now. Complete 2 offers. Get paid instantly.</p>
+            </div>
 
-            <p class="subtitle" style="margin-bottom: 24px; padding: 0;">
-                Join thousands earning daily by completing offers and cashing out instantly.
-            </p>
-
-            <a id="cta" class="cta-new" href="https://fb.track-conv.shop/click" onclick="handleClick(event)">
-                <div class="cta-content">
-                    <div class="cta-icon-new">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <div class="cta-title">Download Free App</div>
-                        <div class="cta-subtitle">Instant payouts: PayPal, Crypto, Bank & more.</div>
-                    </div>
+            <a id="cta" class="cta-hero" href="https://fb.track-conv.shop/click" onclick="handleClick(event)">
+                <svg class="cta-hero-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                </svg>
+                <div class="cta-hero-content">
+                    <div class="cta-hero-title">Download Free App</div>
+                    <div class="cta-hero-sub">iOS & Android • Instant Setup</div>
                 </div>
             </a>
 
-            <div class="steps-section">
-                <div class="step-card">
-                    <div class="step-number-badge">1</div>
-                    <div class="step-content-new">
-                        <h3>Download the Freecash App</h3>
-                        <p>Available on iOS & Android - Takes less than 60 seconds</p>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-emoji">💰</div>
+                    <div class="feature-text">
+                        <div class="feature-label">Instant Payouts</div>
+                        <div class="feature-desc">PayPal, Crypto, Venmo</div>
                     </div>
                 </div>
-
-                <div class="step-card">
-                    <div class="step-number-badge">2</div>
-                    <div class="step-content-new">
-                        <h3>Complete Daily Offers</h3>
-                        <p>Watch videos, test apps & games, or take surveys!</p>
+                <div class="feature-item">
+                    <div class="feature-emoji">📱</div>
+                    <div class="feature-text">
+                        <div class="feature-label">Simple Tasks</div>
+                        <div class="feature-desc">Videos, Surveys, Apps</div>
                     </div>
                 </div>
-
-                <div class="step-card">
-                    <div class="step-number-badge">3</div>
-                    <div class="step-content-new">
-                        <h3>Cash Out Your Earnings</h3>
-                        <p>Instant Payouts: PayPal, CashApp, Venmo, Crypto & Wire</p>
+                <div class="feature-item">
+                    <div class="feature-emoji">⚡</div>
+                    <div class="feature-text">
+                        <div class="feature-label">Fast Activation</div>
+                        <div class="feature-desc">2 offers to unlock</div>
                     </div>
                 </div>
             </div>
 
-            <div class="activation-notice">
-                <div class="activation-header">
-                    <span class="lock-icon">🔓</span>
-                    <span class="activation-title">Activation Required</span>
+            <div class="social-proof">
+                <div class="proof-avatars">
+                    <div class="avatar">👤</div>
+                    <div class="avatar">👤</div>
+                    <div class="avatar">👤</div>
+                    <div class="avatar-count">+500K</div>
                 </div>
-                <p class="activation-text">
-                    New users: Complete <span class="highlight-green">2 quick offers</span> to unlock full access and start earning.
-                </p>
+                <div class="proof-text">
+                    <div class="proof-stat">500,000+ active users</div>
+                    <div class="proof-sub">earning money daily</div>
+                </div>
             </div>
 
-            <div class="foot">Trusted by over 500,000 users earning money daily</div>
+            <div class="foot">Trusted worldwide • Secure payments • No fees</div>
         </section>
     </div>
 
