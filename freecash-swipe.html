@@ -125,23 +125,44 @@
         }
 
         /* Logo */
-        .logo-container {
-            width: 80px;
-            height: 80px;
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
             margin: 0 auto 24px;
-            border-radius: 22px;
+        }
+        
+        .logo-container {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: rgba(0,255,136,.1);
             border: 1px solid rgba(0,255,136,.3);
             box-shadow: 0 10px 40px rgba(0,255,136,.4);
+            transition: transform 0.3s ease;
         }
+        
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+        
         .logo {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             object-fit: cover;
-            border-radius: 22px;
+            border-radius: 18px;
+        }
+        
+        .partnership-x {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--muted);
+            opacity: 0.5;
+            user-select: none;
         }
 
         /* First Step - Swipe to Unlock */
@@ -547,20 +568,26 @@
 
         <!-- FIRST STEP: Swipe to Unlock -->
         <section class="section" id="firstStep">
-            <!-- Logo -->
-            <div class="logo-container">
-                <img class="logo" src="https://i.imgur.com/d4rEH4U.png" alt="Freecash Logo" />
+            <!-- Logo Partnership -->
+            <div class="logo-wrapper">
+                <div class="logo-container">
+                    <img class="logo" src="https://img.freepik.com/vetores-premium/logo-do-tik-tok_578229-290.jpg" alt="TikTok Logo" />
+                </div>
+                <span class="partnership-x">×</span>
+                <div class="logo-container">
+                    <img class="logo" src="https://i.imgur.com/d4rEH4U.png" alt="Freecash Logo" />
+                </div>
             </div>
 
-         <!-- Main Title -->
-<h1 class="main-title">Ready To Scroll?</h1>
+            <!-- Main Title -->
+            <h1 class="main-title">Ready To Scroll?</h1>
 
-<!-- Subtitle -->
-<p class="subtitle">Complete simple tasks and get rewarded</p>
+            <!-- Subtitle -->
+            <p class="subtitle">Complete simple tasks and get rewarded</p>
 
             <!-- Swipe to Unlock -->
             <div class="swipe-container">
-                 <div class="swipe-instruction">Swipe to unlock access</div>
+                <div class="swipe-instruction">Swipe to unlock access</div>
                 <div class="swipe-track" id="swipeTrack">
                     <div class="swipe-fill" id="swipeFill"></div>
                     <div class="swipe-text" id="swipeText">Slide to Unlock →</div>
@@ -577,9 +604,15 @@
 
         <!-- SECOND STEP: You're In! -->
         <section class="section hidden" id="secondStep">
-            <!-- Logo -->
-            <div class="logo-container">
-                <img class="logo" src="https://i.imgur.com/d4rEH4U.png" alt="Freecash Logo" />
+            <!-- Logo Partnership -->
+            <div class="logo-wrapper">
+                <div class="logo-container">
+                    <img class="logo" src="https://img.freepik.com/vetores-premium/logo-do-tik-tok_578229-290.jpg" alt="TikTok Logo" />
+                </div>
+                <span class="partnership-x">×</span>
+                <div class="logo-container">
+                    <img class="logo" src="https://i.imgur.com/d4rEH4U.png" alt="Freecash Logo" />
+                </div>
             </div>
 
             <!-- You're In! -->
