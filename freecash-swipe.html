@@ -129,14 +129,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 10px;
             margin: 0 auto 24px;
         }
         
         .logo-container {
-            width: 70px;
-            height: 70px;
-            border-radius: 18px;
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -151,14 +151,14 @@
         }
         
         .logo {
-            width: 70px;
-            height: 70px;
+            width: 56px;
+            height: 56px;
             object-fit: cover;
-            border-radius: 18px;
+            border-radius: 14px;
         }
         
         .partnership-x {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             color: var(--muted);
             opacity: 0.5;
@@ -551,10 +551,36 @@
 
         /* Responsiveness */
         @media (max-width: 600px) {
-            .container { padding: 40px 16px 32px; }
+            .container { 
+                padding: 40px 16px 32px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 100vh;
+            }
             .main-title { font-size: 40px; }
             .youre-in-text { font-size: 42px; }
             .swipe-container { max-width: 100%; }
+            
+            /* Logos menores no mobile */
+            .logo-container {
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+            }
+            .logo {
+                width: 50px;
+                height: 50px;
+                border-radius: 12px;
+            }
+            .partnership-x {
+                font-size: 20px;
+            }
+            
+            /* Empurra o primeiro step mais pra baixo */
+            #firstStep {
+                margin-top: 60px;
+            }
         }
     </style>
 </head>
